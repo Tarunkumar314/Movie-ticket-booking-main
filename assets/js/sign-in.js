@@ -100,7 +100,7 @@ signUpForm.addEventListener('submit', async (e) => {
     const password = signUpForm["sign-up-passwd"].value;
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/auth/register', {
+        const response = await fetch('https://movie-ticket-booking-main-backend.onrender.com/api/auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -152,7 +152,7 @@ signInForm.addEventListener('submit', async (e) => {
     const password = signInForm["sign-in-passwd"].value;
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/auth/login', {
+        const response = await fetch('https://movie-ticket-booking-main-backend.onrender.com/api/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
